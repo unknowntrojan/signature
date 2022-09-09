@@ -1,0 +1,15 @@
+[package]
+name = "signature"
+version = "0.1.0"
+authors = ["unknowntrojan"]
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+findpattern = { path = "../findpattern" }
+signature_macro = {path = "./signature_macro"}
+module = { path = "../module" }
+
+[workspace]
+members = ["signature_macro"]
